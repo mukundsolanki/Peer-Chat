@@ -1,0 +1,119 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.message__area::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    min-height: 100vh;
+    background: #020202;
+    font-family: 'Roboto', sans-serif;
+}
+
+section.chat__section {
+    width: 800px;
+    max-width: 90%;
+    background: #0d0d0d;
+    border-radius: 12px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.message__area{
+    height: 500px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 40px;
+}
+textarea {
+    width: 100%;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    background: #FBFBFB;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.message {
+    padding: 20px; 
+    border-radius: 4px; 
+    margin-bottom: 40px;
+    max-width: max-content;
+    position: relative;
+}
+
+
+.incoming {
+    background: rgb(90, 238, 83);
+    color: #fff;  
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.outgoing {
+    background: #e9eafd;
+    color: #787986;
+    margin-left: auto;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.message h4 {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: #b8b8b8;
+    font-size: 14px;
+}
+
+body h1{
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 60px;
+    padding: 10px;
+}
+
+.about{
+    color: white;
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: center; */
+    text-align: center;
+    margin-top: 30px;
+}
+
+.about p{
+    text-transform: uppercase;
+    font-size: 20px;
+    width: max-content;
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.about ul li{
+    width: max-content;
+    display: inline-block;
+}
+
+.about ul li img
+{
+    height: 50px;
+}
+
+.about h3{
+    color: rgb(90, 238, 83);
+    padding: 30px;
+    font-size: 40px;
+    padding-bottom: 5px;
+}
