@@ -1,6 +1,6 @@
-// IMPORTING EXPRESS
-const EXPRESS = require('express')
-const app = EXPRESS();
+// IMPORTING express
+const express = require('express')
+const app = express();
 const http = require('http').createServer(app)
 
 const PORT = process.env.port || 3000
@@ -9,7 +9,7 @@ http.listen(PORT , () => {
     console.log(`Listening to Port ${PORT}`);
 })
 
-app.use(EXPRESS.static(__dirname + '/Resources'))
+app.use(express.static(__dirname + '/Resources'))
 
 app.get('/' , (req,res) => {
     res.sendFile(__dirname + '/index.html')

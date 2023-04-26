@@ -4,15 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Peer to Peer Chat App</title>
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/background.css" />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍐</text></svg>"
-    />
+    <!-- <link rel="stylesheet" href="/background.css" /> -->
+    <link id="theme-style" rel="stylesheet" href="/style.css" />
+    <!-- <link id="theme-style" rel="stylesheet" href="/light.css" /> -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍐</text></svg>"/>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.topology.min.js"></script>
   </head>
 
-  <body>
+  <body #background>
     <h1><s>🍐</s>Peer Chat</h1>
     <section class="chat__section">
       <div class="message__area"></div>
@@ -22,10 +21,12 @@
           id="textarea"
           cols="30"
           rows="1"
-          placeholder="Write a message + Press ENTER to send"
+          placeholder='Press "/" to write a message + Press "ENTER" to send'
         ></textarea>
       </div>
     </section>
+
+    <button id="theme-toggle" onclick="toggleTheme()">Switch to Light Theme</button>
 
     <section class="about">
       <p>
@@ -37,15 +38,16 @@
       <div class="social">
         <ul>
           <li>
-            <a href="github.com"><img src="/icons8-github.svg" alt="" /></a>
+            <a href="github.com"><img id="dark_li" src="/icons8-github.svg" alt="" /></a>
           </li>
           <li>
-            <a href="linkedin.com"><img src="/icons8-linkedin.svg" alt="" /></a>
+            <a href="linkedin.com"><img id="dark_gi" src="/icons8-linkedin.svg" alt="" /></a>
           </li>
         </ul>
       </div>
     </section>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/incoming.js"></script>
+</script>
   </body>
 </html>
