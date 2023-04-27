@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -135,7 +135,7 @@ body h1{
   #theme-toggle {
     position: absolute;
     top: 0;
-    background-color: #4CAF50; 
+    background-color: #000000; 
     color: white;
     border-radius: 10px; 
     padding: 10px 20px;
@@ -144,9 +144,10 @@ body h1{
     font-size: 16px; 
     margin: 20px; 
     cursor: pointer; 
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  #theme-toggle:hover {
-    background-color: #3e8e41; /* change the button background color on hover */
-  }
+    /* font-family: 'BenchNine', sans-serif; */
+
+}
+
+ .social p{
+    font-family: 'BenchNine', sans-serif;
+ } 

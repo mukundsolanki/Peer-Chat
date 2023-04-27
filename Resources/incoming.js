@@ -44,11 +44,11 @@ function toggleTheme() {
       themeStylesheet.href = 'light.css';
       linkedIcon.href = 'linked_dark.svg';
       gitIcon.href = 'github_dark.svg';
-      themeToggle.textContent = 'Switch to Dark Theme';
+      themeToggle.textContent = '🌙';
     } else {
       // switch to default theme
       themeStylesheet.href = 'style.css';
-      themeToggle.textContent = 'Switch to Light Theme';
+      themeToggle.textContent = '☀️';
     }
   }
   
@@ -64,6 +64,18 @@ function sendMessage(message) {
     scrollToBottom()
     socket.emit('message', msg)
 }
+
+// const blob = document.getElementById("blob");
+
+// window.onpointermove = event => { 
+//   const { clientX, clientY } = event;
+  
+//   blob.animate({
+//     left: `${clientX}px`,
+//     top: `${clientY}px`
+//   }, { duration: 3000, fill: "forwards" });
+// }
+
 
 function appendMessage(msg, type) {
     let mainDiv = document.createElement('div')

@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -100,6 +100,7 @@ body h1{
     padding-left: 5%;
     padding-right: 5%;
     width: 1000px;
+    
 }
 
 .about ul li{
@@ -126,18 +127,19 @@ body h1{
 #theme-toggle {
     position: absolute;
     top: 0;
-    background-color: #4CAF50; 
-    color: white;
+    background-color: #fefffe; 
+    color: rgb(0, 0, 0);
     border-radius: 10px; 
     padding: 10px 20px;
     text-align: center; 
     font-size: 16px; 
     margin: 20px; 
     cursor: pointer; 
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'BenchNine', sans-serif; */
     /* width:100px; */
-  }
-  
-  #theme-toggle:hover {
-    background-color: #3e8e41; /* change the button background color on hover */
-  }
+}
+
+.social p{
+    font-family: 'BenchNine', sans-serif;
+    letter-spacing: 2px;
+}  
